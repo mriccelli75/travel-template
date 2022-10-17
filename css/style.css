@@ -32,6 +32,26 @@ html::-webkit-scrollbar-thumb {
   background: #10221b;
 }
 
+section {
+  padding: 5rem 9%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+}
+
+.btn:hover {
+  background: #10221b;
+  color: #fff;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -168,16 +188,95 @@ html::-webkit-scrollbar-thumb {
   color: #fff;
 }
 
+section.home {
+  padding: 0;
+}
+
+.box {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover !important;
+  background-position: center !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2rem 9%;
+}
+
+.box.second {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.box .content {
+  width: 50rem;
+}
+
+.box .content span {
+  font-size: 4rem;
+  color: #10221b;
+}
+
+.box .content h3 {
+  font-size: 6rem;
+  color: #219150;
+  padding-top: .5rem;
+  text-transform: uppercase;
+}
+
+.box .content p {
+  line-height: 2;
+  color: #10221b;
+  font-size: 1.5rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem;
+  color: #10221b;
+}
+
 /* Media Queries */
 @media (max-width: 1200px) {
   .header {
     padding: 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
   }
 }
 
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+  }
+  .home .box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-position: right !important;
+    padding: 2rem;
+  }
+  .second {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-position: left !important;
+  }
+  .content {
+    text-align: center;
+  }
+  .content span {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 4rem;
   }
 }
 
@@ -227,6 +326,10 @@ html::-webkit-scrollbar-thumb {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
