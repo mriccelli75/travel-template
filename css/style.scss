@@ -423,7 +423,57 @@ section.packages {
         }
     }
 }
+section.services {
+    background: $light-bg;
+    
+    .box-container {
+        @include grid((31rem));
 
+        .box {
+            display: block;
+            text-align: center;
+            padding: 2re;
+            border: $border;
+            border-radius: .5rem;
+            background: $white;
+            min-height: auto;
+
+            &:hover {
+                background: $black;
+
+                img {
+                    filter: invert(1);
+                }
+                p {
+                    color: $white;
+                }
+                .btn {
+                    border-color: $white;
+                    color: $white;
+                }
+            }
+
+            img {
+                height: 10rem;
+                margin-bottom: 1rem;
+            }
+            h3 {
+                font-size: 2rem;
+                color: $green;
+                
+            }
+
+            p {
+                font-size: 1.5rem;
+                color: #10221b;
+                padding: 1rem 0;
+                line-height: 2;
+            }
+        }
+    }
+
+    
+}
 /* Media Queries */
 @media  (max-width:1200px) {   
     .header {
