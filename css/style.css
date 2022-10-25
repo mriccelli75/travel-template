@@ -479,6 +479,63 @@ section.packages .box-container .box .content .price {
   color: #219150;
 }
 
+section.services {
+  background: #eee;
+}
+
+section.services .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 1.5rem;
+}
+
+section.services .box-container .box {
+  display: block;
+  text-align: center;
+  padding: 2re;
+  border: 0.2rem solid #10221b;
+  border-radius: .5rem;
+  background: #fff;
+  min-height: auto;
+}
+
+section.services .box-container .box:hover {
+  background: #10221b;
+}
+
+section.services .box-container .box:hover img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+section.services .box-container .box:hover p {
+  color: #fff;
+}
+
+section.services .box-container .box:hover .btn {
+  border-color: #fff;
+  color: #fff;
+}
+
+section.services .box-container .box img {
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+
+section.services .box-container .box h3 {
+  font-size: 2rem;
+  color: #219150;
+}
+
+section.services .box-container .box p {
+  font-size: 1.5rem;
+  color: #10221b;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
 /* Media Queries */
 @media (max-width: 1200px) {
   .header {
