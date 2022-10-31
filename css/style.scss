@@ -555,6 +555,54 @@ section.reviews {
 
     }
 }
+
+section.blogs {
+    .slide {
+        text-align: center;
+        // width: 35rem;
+        padding: 2rem;
+
+        img{
+            height: 25rem;
+            width: 100%;
+            object-fit: cover;
+            border-radius: .5rem;
+        }
+        .icons {
+            background: $black;
+            border-radius: .5rem;
+            padding: 1rem;
+            position: relative;
+            top: -2rem;
+            display: inline-block;
+
+            a {
+                font-size: 1.4rem;
+                color: $white;
+                margin: 0 1rem;
+
+                &:hover {
+                    color: $green;
+                }
+                i {
+                    padding-right: .5rem;
+                    color: $green;
+                }
+            }
+
+        }
+    }
+    h3 {
+        font-size: 2rem;
+        color: $black;
+    }
+    p {
+        font-size: 1.5rem;
+        color: $black;
+        padding: 1rem 0;
+        line-height: 2;
+    }
+}
 @media  (max-width:768px) {
     .header {
         #menu-btn {

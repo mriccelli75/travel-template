@@ -621,6 +621,55 @@ section.reviews .slide .user h3 {
   color: #10221b;
 }
 
+section.blogs .slide {
+  text-align: center;
+  padding: 2rem;
+}
+
+section.blogs .slide img {
+  height: 25rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: .5rem;
+}
+
+section.blogs .slide .icons {
+  background: #10221b;
+  border-radius: .5rem;
+  padding: 1rem;
+  position: relative;
+  top: -2rem;
+  display: inline-block;
+}
+
+section.blogs .slide .icons a {
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+section.blogs .slide .icons a:hover {
+  color: #219150;
+}
+
+section.blogs .slide .icons a i {
+  padding-right: .5rem;
+  color: #219150;
+}
+
+section.blogs h3 {
+  font-size: 2rem;
+  color: #10221b;
+}
+
+section.blogs p {
+  font-size: 1.5rem;
+  color: #10221b;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
 @media (max-width: 768px) {
   .header #menu-btn {
     display: inline-block;
