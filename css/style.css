@@ -718,6 +718,14 @@ section.newsletter .content form .btn:hover {
   color: #10221b;
 }
 
+section.clients .slide {
+  text-align: center;
+}
+
+section.clients .slide img {
+  height: 12rem;
+}
+
 @media (max-width: 768px) {
   .header #menu-btn {
     display: inline-block;

@@ -648,6 +648,15 @@ section.newsletter{
 
     }
 }
+section.clients {
+    .slide {
+        text-align: center;
+
+        img {
+            height: 12rem;
+        }
+    }
+}
 @media  (max-width:768px) {
     .header {
         #menu-btn {
