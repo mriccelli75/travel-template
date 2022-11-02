@@ -657,6 +657,64 @@ section.clients {
         }
     }
 }
+.footer {
+    background: linear-gradient(rgba(0,0,0,.5) rgba(0,0,0,.5)), url(../images/footer-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .box-container {
+        @include grid(25rem);
+
+        .box {
+
+            display: block;
+            min-height: auto;
+
+            h3 {
+                font-size: 2rem;
+                padding:1.5rem;
+                color: $white;
+                padding-left: 0;
+            }
+            a {
+                display: block;
+                font-size: 1.4rem;
+                color: $white;
+                padding: 1rem 0;
+                
+
+                i {
+                    color: $green;
+                    padding-right: .5rem;
+                }
+
+                &:hover {
+                    color: $green;
+
+                    i {
+                        padding-right: 2rem;
+                    }
+                }
+            }
+            
+        }
+    }
+    .credit {
+        text-align: center;
+        margin-top: 2.5rem;
+        padding: 1rem;
+        padding-top: 2.5rem;
+        font-size: 2rem;
+        color: $white;
+
+        span {
+            color: $green;
+        }
+
+    }
+
+}
 @media  (max-width:768px) {
     .header {
         #menu-btn {
